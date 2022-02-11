@@ -1,0 +1,173 @@
+@font-face{
+	font-family: 'Arial Unicode MS';
+	src: url(Arial-Unicode-MS.woff);
+}  
+body{
+	background-color: darkgray;
+	font-family: 'Arial Unicode MS';
+	font-size: 12px;
+}
+page{
+	background: white;
+	display: block;
+	margin: 0 auto;
+    margin-bottom: 0.5cm;
+	position: relative;
+	page-break-before: always;
+}
+page[size="A4"]{
+	width: 21cm;
+	height: 29.7cm;
+}
+page[size="A4"][layout="portrait"]{
+	width: 29.7cm;
+	height: 21cm;
+}
+@page{
+	size: A4;
+}
+@media print{
+	page{
+		margin-top: 10px !important;
+		margin: 0;
+		padding: 0;
+	}
+	div.footer{
+		bottom: -1cm;
+	}
+	td{
+		padding: 0 10px;
+	}
+}
+@media screen{
+	page{
+		padding: 1cm 1cm 2cm 1cm;
+	}
+	div.footer{
+		width: 92%;
+		margin: auto;
+		bottom: 1cm;
+	}
+}
+table, th, td{
+	border: 1px solid #000;
+	border-collapse: collapse;
+}
+td{
+	height: 18px;
+	padding: 4px 10px;
+}
+input{
+	padding: 0;
+}
+table.stk * input{
+	margin-left: 0;
+	margin-right: 0;
+}
+input.noboder{
+	outline: none;
+	border: none;
+	background: none;
+}
+input.text-content{
+	border-bottom: 1px dotted !important;
+}
+sup{
+	 font-size: 10px;
+}
+.w100{
+	width: 100%;
+}
+.bold{
+	font-weight: bold;
+}
+.center{
+	text-align: center;
+}
+.center-all{
+	align-items: center;
+	text-align: center
+}
+
+/* page */
+.item{
+	display: flex;
+	padding-bottom: 3px;
+	line-height: 1.1rem;
+}
+.in{
+	text-indent: 30px;
+}
+div.item h2{
+	padding: 10px 0;
+}
+div.item h2, div.item table tr td h2{
+	font-size: 13px;
+    margin: inherit;
+}
+div.item h2, div.item h2 input{
+	text-transform: uppercase;
+}
+.logo{
+	width: 20%;
+	margin-top: 7px;
+	height: 40px;
+}
+.title-document{
+	float: right;
+	width: 79%
+}
+.title-document h1, .title-end h1{
+	font-size: 17px;
+	line-height: 23px;
+}
+.title-document p{
+	float: right;
+	margin: 0;
+	padding: 0;
+}
+table.stk * td{
+	border: 1px solid;
+	text-align: center;
+}
+table.stk * td input{
+	width: 10px;
+	height: 15px;
+	text-transform: uppercase;
+}
+.footer{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	left: 0;
+    right: 0;
+}
+table.terms tr td{
+	border: none;
+	padding: 2px 5px;
+}
+table.terms tr td:first-child{
+	border-right: 1px solid #000;
+}
+table.terms tr td div.item{
+	padding: 0;
+}
+table.terms tr td div.item h2{
+	padding: 0;
+}
+table.terms-2{
+	font-size: 12px;
+	line-height: 1.1;
+}
+table.terms-2 tr{
+	padding: 0;
+	margin: 0;
+}
+table.terms-2 tr td{
+	border: none;
+	padding: 0 5px;
+}
+table.terms-2 * .item{
+	padding-bottom: 0;
+	line-height: 1;
+}
