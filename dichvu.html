@@ -88,11 +88,11 @@
                                     <span class="name-prog">Scan ID Card/Passport</span>
                                 </div>
                                 <div class="prog">
-                                    <div class="prog-circle"><span>2</span></div>
+                                    <div class="prog-circle prog-active"><span>2</span></div>
                                     <span class="name-prog">Personal Information</span>
                                 </div>
                                 <div class="prog">
-                                    <div class="prog-circle"><span>3</span></div>
+                                    <div class="prog-circle prog-active"><span>3</span></div>
                                     <span class="name-prog">Service Registration</span>
                                 </div>
                                 <div class="prog">
@@ -105,7 +105,7 @@
                                 </div>
                             </div>
                         </div>
-                        <progress class="prog-bar" value="0" max="4"></progress>
+                        <progress class="prog-bar" value="2" max="4"></progress>
                     </div>
                     <div class="prog-text">
                         <span>Scan ID Card/Passport</span>
@@ -115,45 +115,53 @@
                         <span>OTP Authentication</span>
                     </div>
                     <!-- End Progress -->
-                    <h2 style="text-align: center;">CHỌN LOẠI TÀI KHOẢN ĐĂNG KÝ</h2>
-                    <p><b class="important">1. Quốc tịch của quý khách</b></p>
-                    <div class="item"><span style="flex: 1;"><input name="city" type="radio" /> Việt Nam</span><span style="flex: 1;"><input name="city" type="radio" /> Nước ngoài</span></div>
-                    <p><b class="important">2. Chọn loại tài khoản</b></p>
-                    <div class="item">
-                        <span style="flex: 1;"><input type="checkbox" checked="checked" /> Thông thường</span>
-                        <span style="flex: 1;"><input type="checkbox" /> Ký quỹ</span>
+                    <h2 style="text-align: center;">ĐĂNG KÝ DỊCH VỤ</h2>
+                    <p><b class="important">Đề nghị FNS cho phép tôi được đăng ký sử dụng dịch vụ GDCK trực tuyến và các tiện ích (các dịch vụ này áp dụng trên tất cả tiểu khoản thuộc Tài khoản giao dịch và lưu ký chứng khoán) sau:</b></p>
+                    <div class="item pd-small">
+                        <span class="mr-left important"><input type="checkbox" checked="checked" /> 1. Giao dịch qua mạng internet:</span>
+                        <span class="mr-left"><input type="checkbox" /> PIN</span>
+                        <span class="mr-left"><input type="checkbox" /> Token</span>
+                        <span class="mr-left"><input type="checkbox" /> OTP</span>
                     </div>
-                    <p><b class="important">3. Quý khách lựa chọn mô hình quản lý tài khoản</b></p>
-                    <div class="item">
-                        <div class="item" style="flex: 1;flex-direction: column;">
-                            <span style="flex: 1;"><input name="user-support" type="radio" /> Khách hàng Môi giới tư vấn</span>
-                            <div class="col">
-                                <input class="effect" id="tags" type="text" placeholder="Nhập tên NV chăm sóc (không bắt buộc)">
-                                <span class="focus-border"></span>
-                            </div>
+                    <div class="item pd-small">
+                        <span class="mr-left important"><input type="checkbox" checked="checked" /> 2. Giao dịch qua điện thoại:</span>
+                        <span class="mr-left"><input class="effect" style="padding-top: 0;" type="text" placeholder="SĐT"></span>
+                    </div>
+                    <div class="item pd-small">
+                        <span class="mr-left"><input type="checkbox" /> 3. Chuyển nhượng quyền nhận tiền bán chứng khoán</span>
+                    </div>
+                    <div class="item pd-small">
+                        <span class="mr-left"><input type="checkbox" /> 4. Nhận tin nhắn qua số điện thoại đăng ký dịch vụ (thu phí)</span>
+                    </div>
+                    <div class="item pd-small">
+                        <span class="mr-left"><input type="checkbox" /> 5. Đăng ký nhận sao kê và bản tin FNS qua email đã đăng ký</span>
+                    </div>
+                    <div class="item pd-small">
+                        <span class="mr-left"><input type="checkbox" /> 6. Đăng ký giao dịch ký quỹ (margin)<br><span class="mr-left">Hạn mức ký quỹ: 1.000.000.000 đồng</span><br><span class="mr-left">Hạn mức khác: Vui lòng liên hệ Môi giới</span></span>
+                    </div>
+                    <p><b class="important">Đăng ký tài khoản thụ hưởng:</b></p>
+                    <div class="item col-center">
+                        <div class="col">
+                            <span>Tên ngân hàng thụ hưởng: </span><input class="effect" type="text" placeholder="Tên ngân hàng thụ hưởng">
                         </div>
-                        <span style="flex: 1;"><input name="user-support" type="radio" /> Khách hàng chủ động giao dịch</span>
-                    </div>
-                    <p><b class="important">4. Lựa chọn Chi Nhánh/ Phòng Giao Dịch gần nhất</b></p>
-                    <div class="item">
-                        <div class="col" style="width: -webkit-fill-available;">
-                            <select>
-                                <option style="display: none">Lựa chọn</option>
-                                <optgroup label="Hồ Chí Minh">
-                                    <option>72 Lê Thánh Tôn, Phường Bến Nghé, Quận 1, TP. Hồ Chí Minh</option>
-                                    <option>353-353bis-355 An Dương Vương, Phường 3, Quận 5, TP. Hồ Chí Minh</option>
-                                </optgroup>
-                                <optgroup label="Hà Nội">
-                                    <option>Tòa nhà HAREC, số 4A Láng Hạ, Phường Thành Công, Quận Ba Đình, Hà Nội</option>
-                                </optgroup>
-                                <optgroup label="Đà Nẵng">
-                                    <option>90-92 Hồ Xuân Hương, Quận Ngũ Hành Sơn, TP. Đà Nẵng</option>
-                                </optgroup>
-                            </select>
+                        <div class="col">
+                            <span>Tên tài khoản thụ hưởng: </span><input class="effect" type="text" placeholder="Tên tài khoản thụ hưởng">
+                        </div>
+                        <div class="col">
+                            <span>Tên tài khoản thụ hưởng: </span><input class="effect" type="text" placeholder="Tên tài khoản thụ hưởng">
+                        </div>
+                        <div class="col">
+                            <span>Số tài khoản ngân hàng thụ hưởng: </span><input class="effect" type="text" placeholder="Số tài khoản ngân hàng thụ hưởng">
+                        </div>
+                        <div class="col">
+                            <span>Chi nhánh ngân hàng: </span><input class="effect" type="text" placeholder="Chi nhánh ngân hàng">
+                        </div>
+                        <div class="col">
+                            <span>Tỉnh/ Thành phố: </span><input class="effect" type="text" placeholder="Tỉnh/ Thành phố">
                         </div>
                     </div>
                     <div class="submit-form">
-                        <!-- <button class="prev">Quay lại</button> -->
+                        <button class="prev">Quay lại</button>
                         <button class="next">Tiếp tục</button>
                     </div>
                 </form>

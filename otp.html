@@ -88,24 +88,24 @@
                                     <span class="name-prog">Scan ID Card/Passport</span>
                                 </div>
                                 <div class="prog">
-                                    <div class="prog-circle"><span>2</span></div>
+                                    <div class="prog-circle prog-active"><span>2</span></div>
                                     <span class="name-prog">Personal Information</span>
                                 </div>
                                 <div class="prog">
-                                    <div class="prog-circle"><span>3</span></div>
+                                    <div class="prog-circle prog-active"><span>3</span></div>
                                     <span class="name-prog">Service Registration</span>
                                 </div>
                                 <div class="prog">
-                                    <div class="prog-circle"><span>4</span></div>
+                                    <div class="prog-circle prog-active"><span>4</span></div>
                                     <span class="name-prog">Terms And Conditions</span>
                                 </div>
                                 <div class="prog">
-                                    <div class="prog-circle"><span>5</span></div>
+                                    <div class="prog-circle prog-active"><span>5</span></div>
                                     <span class="name-prog">OTP Authentication</span>
                                 </div>
                             </div>
                         </div>
-                        <progress class="prog-bar" value="0" max="4"></progress>
+                        <progress class="prog-bar" value="4" max="4"></progress>
                     </div>
                     <div class="prog-text">
                         <span>Scan ID Card/Passport</span>
@@ -115,46 +115,20 @@
                         <span>OTP Authentication</span>
                     </div>
                     <!-- End Progress -->
-                    <h2 style="text-align: center;">CHỌN LOẠI TÀI KHOẢN ĐĂNG KÝ</h2>
-                    <p><b class="important">1. Quốc tịch của quý khách</b></p>
-                    <div class="item"><span style="flex: 1;"><input name="city" type="radio" /> Việt Nam</span><span style="flex: 1;"><input name="city" type="radio" /> Nước ngoài</span></div>
-                    <p><b class="important">2. Chọn loại tài khoản</b></p>
-                    <div class="item">
-                        <span style="flex: 1;"><input type="checkbox" checked="checked" /> Thông thường</span>
-                        <span style="flex: 1;"><input type="checkbox" /> Ký quỹ</span>
+                    <h2 style="text-align: center;">XÁC THỰC OTP</h2>
+                    <p style="text-align: center;"><b class="important">Vui lòng nhập mã OTP gồm 6 số gửi đến số điện thoại *******<label>076</label></b></p>
+                    <div class="item otp">
+                        <input class="otp-item" maxlength="1" type="text">
+                        <input class="otp-item" maxlength="1" type="text">
+                        <input class="otp-item" maxlength="1" type="text">
+                        <input class="otp-item" maxlength="1" type="text">
+                        <input class="otp-item" maxlength="1" type="text">
+                        <input class="otp-item" maxlength="1" type="text">
                     </div>
-                    <p><b class="important">3. Quý khách lựa chọn mô hình quản lý tài khoản</b></p>
-                    <div class="item">
-                        <div class="item" style="flex: 1;flex-direction: column;">
-                            <span style="flex: 1;"><input name="user-support" type="radio" /> Khách hàng Môi giới tư vấn</span>
-                            <div class="col">
-                                <input class="effect" id="tags" type="text" placeholder="Nhập tên NV chăm sóc (không bắt buộc)">
-                                <span class="focus-border"></span>
-                            </div>
-                        </div>
-                        <span style="flex: 1;"><input name="user-support" type="radio" /> Khách hàng chủ động giao dịch</span>
-                    </div>
-                    <p><b class="important">4. Lựa chọn Chi Nhánh/ Phòng Giao Dịch gần nhất</b></p>
-                    <div class="item">
-                        <div class="col" style="width: -webkit-fill-available;">
-                            <select>
-                                <option style="display: none">Lựa chọn</option>
-                                <optgroup label="Hồ Chí Minh">
-                                    <option>72 Lê Thánh Tôn, Phường Bến Nghé, Quận 1, TP. Hồ Chí Minh</option>
-                                    <option>353-353bis-355 An Dương Vương, Phường 3, Quận 5, TP. Hồ Chí Minh</option>
-                                </optgroup>
-                                <optgroup label="Hà Nội">
-                                    <option>Tòa nhà HAREC, số 4A Láng Hạ, Phường Thành Công, Quận Ba Đình, Hà Nội</option>
-                                </optgroup>
-                                <optgroup label="Đà Nẵng">
-                                    <option>90-92 Hồ Xuân Hương, Quận Ngũ Hành Sơn, TP. Đà Nẵng</option>
-                                </optgroup>
-                            </select>
-                        </div>
-                    </div>
+                    <p style="text-align: center;"><b>Không nhận được OTP? <a href="">Gửi lại (<label>30</label>s)</a></b></p>
                     <div class="submit-form">
                         <!-- <button class="prev">Quay lại</button> -->
-                        <button class="next">Tiếp tục</button>
+                        <button class="next">Mở tài khoản</button>
                     </div>
                 </form>
             </section>

@@ -47,7 +47,7 @@ body {
 	div.submit-form{
 		flex-direction: column-reverse;
 	}
-	.tabset .tab-panel  {
+	.tabset .tab-panel {
 		padding: 0 !important;
 	}
 	.mr-left{
@@ -432,6 +432,7 @@ select{
 	height: 70vh;
 	overflow: scroll;
 	overflow-x: hidden;
+	box-shadow: 0px 0px 5px 1px #999 inset;
 }
 div.item-3 b{
 	padding: 10px 0;
@@ -878,4 +879,50 @@ div.tbfix table th, div.tbfix table td{
 	padding: 5px;
 	text-align: center;
 	vertical-align: middle;
+}
+
+/* NOT */
+.not{
+	width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.not .icon-success{
+	width: 70px;
+	height: 70px;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='green' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-check-circle'%3E%3Cpath d='M22 11.08V12a10 10 0 1 1-5.93-9.14'/%3E%3Cpolyline points='22 4 12 14.01 9 11.01'/%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	margin: 1em;
+}
+.name-user{
+	color:#d8402b;
+}
+.info{
+	font-style: italic;
+	color: #d8402b;
+}
+.text-hiden{
+	text-decoration: line-through;
+	font-style: italic;
+}
+.grid{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding-left: 20px;
+}
+.item-col{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 5px;
+}
+.grid .item-col span{
+	white-space: pre;
+}
+@media screen and (max-width:900px) {
+	.grid{
+		grid-template-columns: 1fr !important;
+	}
 }

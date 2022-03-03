@@ -88,11 +88,11 @@
                                     <span class="name-prog">Scan ID Card/Passport</span>
                                 </div>
                                 <div class="prog">
-                                    <div class="prog-circle"><span>2</span></div>
+                                    <div class="prog-circle prog-active"><span>2</span></div>
                                     <span class="name-prog">Personal Information</span>
                                 </div>
                                 <div class="prog">
-                                    <div class="prog-circle"><span>3</span></div>
+                                    <div class="prog-circle prog-active"><span>3</span></div>
                                     <span class="name-prog">Service Registration</span>
                                 </div>
                                 <div class="prog">
@@ -105,7 +105,7 @@
                                 </div>
                             </div>
                         </div>
-                        <progress class="prog-bar" value="0" max="4"></progress>
+                        <progress class="prog-bar" value="2" max="4"></progress>
                     </div>
                     <div class="prog-text">
                         <span>Scan ID Card/Passport</span>
@@ -115,45 +115,105 @@
                         <span>OTP Authentication</span>
                     </div>
                     <!-- End Progress -->
-                    <h2 style="text-align: center;">CHỌN LOẠI TÀI KHOẢN ĐĂNG KÝ</h2>
-                    <p><b class="important">1. Quốc tịch của quý khách</b></p>
-                    <div class="item"><span style="flex: 1;"><input name="city" type="radio" /> Việt Nam</span><span style="flex: 1;"><input name="city" type="radio" /> Nước ngoài</span></div>
-                    <p><b class="important">2. Chọn loại tài khoản</b></p>
-                    <div class="item">
-                        <span style="flex: 1;"><input type="checkbox" checked="checked" /> Thông thường</span>
-                        <span style="flex: 1;"><input type="checkbox" /> Ký quỹ</span>
+                    <h2 style="text-align: center;">THÔNG TIN ĐẦU TƯ</h2>
+                    <div class="item pd-small">
+                        <span><b>1. Mục tiêu đầu tư, mức độ chấp nhận rủi ro:</b></span>
                     </div>
-                    <p><b class="important">3. Quý khách lựa chọn mô hình quản lý tài khoản</b></p>
-                    <div class="item">
-                        <div class="item" style="flex: 1;flex-direction: column;">
-                            <span style="flex: 1;"><input name="user-support" type="radio" /> Khách hàng Môi giới tư vấn</span>
-                            <div class="col">
-                                <input class="effect" id="tags" type="text" placeholder="Nhập tên NV chăm sóc (không bắt buộc)">
-                                <span class="focus-border"></span>
-                            </div>
+                    <div class="item pd-small" style="justify-content: space-between;">
+                        <div class="item pd-small">
+                            <span class="important">Mục tiêu đầu tư: <input class="effect" style="padding-top: 0;text-align: right;width:10ch" type="number"> %/năm</span>
                         </div>
-                        <span style="flex: 1;"><input name="user-support" type="radio" /> Khách hàng chủ động giao dịch</span>
+                        <div class="item pd-small">
+                            <span class="important">Mức độ chấp nhận rủi ro: <input class="effect" style="padding-top: 0;text-align: right;;width:10ch" type="number"> %/năm</span>
+                        </div>
                     </div>
-                    <p><b class="important">4. Lựa chọn Chi Nhánh/ Phòng Giao Dịch gần nhất</b></p>
-                    <div class="item">
-                        <div class="col" style="width: -webkit-fill-available;">
-                            <select>
-                                <option style="display: none">Lựa chọn</option>
-                                <optgroup label="Hồ Chí Minh">
-                                    <option>72 Lê Thánh Tôn, Phường Bến Nghé, Quận 1, TP. Hồ Chí Minh</option>
-                                    <option>353-353bis-355 An Dương Vương, Phường 3, Quận 5, TP. Hồ Chí Minh</option>
-                                </optgroup>
-                                <optgroup label="Hà Nội">
-                                    <option>Tòa nhà HAREC, số 4A Láng Hạ, Phường Thành Công, Quận Ba Đình, Hà Nội</option>
-                                </optgroup>
-                                <optgroup label="Đà Nẵng">
-                                    <option>90-92 Hồ Xuân Hương, Quận Ngũ Hành Sơn, TP. Đà Nẵng</option>
-                                </optgroup>
-                            </select>
+                    <div class="item pd-small">
+                        <span><b class="important">2. Bắt đầu tham gia thị trường chứng khoán từ năm:</b><input class="effect" style="padding-top: 0;width:10ch" type="number"></span>
+                    </div>
+                    <div class="item pd-small">
+                        <span class="important"><b>3. Kinh nghiệm đầu tư:</b></span>
+                    </div>
+                    <div class="item pd-small" style="justify-content: space-between;">
+                        <div class="item pd-small">
+                            <span><input type="checkbox" /> Chưa có</span>
                         </div>
+                        <div class="item pd-small">
+                            <span><input type="checkbox" /> Cổ phiếu</span>
+                        </div>
+                        <div class="item pd-small">
+                            <span><input type="checkbox" /> Trái phiếu</span>
+                        </div>
+                        <div class="item pd-small">
+                            <span><input type="checkbox" /> Chứng khoán khác</span>
+                        </div>
+                    </div>
+                    <div class="item pd-small">
+                        <span class="important"><b>4. Kiến thức đầu tư:</b></span>
+                    </div>
+                    <div class="item pd-small" style="justify-content: space-between;">
+                        <div class="item pd-small">
+                            <span><input type="radio" name="kien_thuc_dau_tu" /> Chưa có</span>
+                        </div>
+                        <div class="item pd-small">
+                            <span><input type="radio" name="kien_thuc_dau_tu" /> Còn nhiều hạn chế</span>
+                        </div>
+                        <div class="item pd-small">
+                            <span><input type="radio" name="kien_thuc_dau_tu" /> Tốt</span>
+                        </div>
+                        <div class="item pd-small">
+                            <span><input type="radio" name="kien_thuc_dau_tu" /> Rất tốt</span>
+                        </div>
+                    </div>
+                    <div class="item pd-small">
+                        <span><b>5. Khai báo khi Khách hàng là Người nội bộ và Người có liên quan của Người nội bộ (nếu có)</b></span>
+                    </div>
+                    <div class="item tbfix">
+                        <table width="100%">
+                            <thead>
+                                <tr>
+                                    <th rowspan="3" width="5%">STT</th>
+                                    <th rowspan="3" width="30%">Tổ chức phát hành</th>
+                                    <th rowspan="3" width="5%">Mã CK</th>
+                                    <th colspan="3" width="auto">Mối quan hệ với TCPH</th>
+                                    <th rowspan="3" width="15%">Ngày hiệu lực</th>
+                                </tr>
+                                <tr>
+                                    <th>Người nội bộ</th>
+                                    <th colspan="2">Người có liên quan của Người nội bộ</th>
+                                </tr>
+                                <tr>
+                                    <th>Chức vụ của KH tại TCPH</th>
+                                    <th>Họ và tên - Mối quan hệ với KH</th>
+                                    <th>Chức vụ</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input class="effect" style="padding-top: 0;width:100%;border: none;text-align: center;" type="text"></td>
+                                    <td><input class="effect" style="padding-top: 0;width:100%;border: none;" type="text"></td>
+                                    <td><input class="effect" style="padding-top: 0;width:100%;border: none;text-align: center;" type="text"></td>
+                                    <td><input class="effect" style="padding-top: 0;width:100%;border: none;" type="text"></td>
+                                    <td><input class="effect" style="padding-top: 0;width:100%;border: none;" type="text"></td>
+                                    <td><input class="effect" style="padding-top: 0;width:100%;border: none;" type="text"></td>
+                                    <td><input class="effect" style="padding-top: 0;width:100%;border: none;text-align: center;" type="date"></td>
+                                </tr>
+                                <tr>
+                                    <td><input class="effect" style="padding-top: 0;width:100%;border: none;text-align: center;" type="text"></td>
+                                    <td><input class="effect" style="padding-top: 0;width:100%;border: none;" type="text"></td>
+                                    <td><input class="effect" style="padding-top: 0;width:100%;border: none;text-align: center;" type="text"></td>
+                                    <td><input class="effect" style="padding-top: 0;width:100%;border: none;" type="text"></td>
+                                    <td><input class="effect" style="padding-top: 0;width:100%;border: none;" type="text"></td>
+                                    <td><input class="effect" style="padding-top: 0;width:100%;border: none;" type="text"></td>
+                                    <td><input class="effect" style="padding-top: 0;width:100%;border: none;text-align: center;" type="date"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="item pd-small">
+                        <span><b>6. Yêu cầu khác cho số tài khoản lưu ký:</b><input type="checkbox" class="mr-left"/></span>
                     </div>
                     <div class="submit-form">
-                        <!-- <button class="prev">Quay lại</button> -->
+                        <button class="prev">Quay lại</button>
                         <button class="next">Tiếp tục</button>
                     </div>
                 </form>
