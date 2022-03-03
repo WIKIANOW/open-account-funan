@@ -379,6 +379,7 @@ div.item div.cccd {
     align-items: center;
     display: flex;
     flex-direction: column;
+	width: 100%
 }
 
 div.item div.cccd div.photo{
