@@ -23,6 +23,9 @@ body {
 		background-size: 15rem !important;
 		background-position: 0 0 !important;
 	}
+	div.item div.cccd{
+        min-width: 0 !important;
+    }
 }
 @media screen and (max-width:480px){
 	.prog-bar{display: none !important;}
@@ -364,20 +367,26 @@ div.submit-form button{
 	border-radius: 30px;
 	font-weight: bold;
 	text-transform: uppercase;
-	margin: 10px auto;
+	margin: 0.5em auto !important;
 }
 .next{
 	background-color: #d8402b;
 	color: #fff;
 }
 div.item div.cccd {
-	margin: auto;
-	text-align: center;
-	align-items: center;
+    margin: 20px 20px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-width: 400px;
 }
+
 div.item div.cccd div.photo{
-	width: 300px;
-	height: 200px;
+	width: 100% !important;
+    min-width: 300px;
+    max-width: 400px;
+	height: 300px;
 	align-items: center;
 	display: flex;
 	background-color: darkgray;
@@ -390,6 +399,32 @@ div.item div.cccd div.photo button{
 	background-color: #d8402b;
 	color: #fff;
 	padding: 20px 50px;
+}
+.refresh{
+    display: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-refresh-cw'%3E%3Cpolyline points='23 4 23 10 17 10'/%3E%3Cpolyline points='1 20 1 14 7 14'/%3E%3Cpath d='M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: center;
+    padding: 30px;
+}
+.not{
+	width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.not .icon-success{
+	width: 70px;
+	height: 70px;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='green' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-check-circle'%3E%3Cpath d='M22 11.08V12a10 10 0 1 1-5.93-9.14'/%3E%3Cpolyline points='22 4 12 14.01 9 11.01'/%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	margin: 1em;
+}
+.name-user{
+	color:#d8402b;
 }
 input[type="text"], input[type="date"]{
 	box-sizing: border-box;
@@ -621,6 +656,23 @@ progress[value]::-webkit-progress-bar {
 	.item-wrap div.item{
 		width: 100% !important;
 	}
+	.progress, .prog-text{
+		display: none !important;
+	}
+    div.item div.cccd {
+        margin: 10px !important;
+    }
+    .refresh{
+        display: inline-block !important;
+    }
+}
+@media screen and (max-width: 600px) {
+    div.submit-form {
+        flex-direction: column;
+    }
+    div.submit-form button {
+        margin: 1em auto !important;
+    }
 }
 @media screen and (max-width:999px) {
 	.info-show{
@@ -925,4 +977,22 @@ div.tbfix table th, div.tbfix table td{
 	.grid{
 		grid-template-columns: 1fr !important;
 	}
+}
+
+ul.ui-menu{
+	max-width:fit-content;
+	max-height: 150px;
+	overflow-y: scroll;
+	background-color: #fff;
+	box-shadow: 0px 0px 5px 1px #999;
+	list-style: none;
+	margin: auto;
+	padding: 0;
+}
+ul.ui-menu li{
+	padding: 1em;
+}
+ul.ui-menu li:hover{
+	background-color:#d8402b;
+	color: #fff;
 }

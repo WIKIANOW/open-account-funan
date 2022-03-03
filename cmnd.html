@@ -108,7 +108,7 @@
                         <progress class="prog-bar" value="0" max="4"></progress>
                     </div>
                     <div class="prog-text">
-                        <span>Xác thực CMND/CCCD/Hộ chiếu</span>
+                        <span>CMND/CCCD/Hộ chiếu</span>
                         <span>Thông tin cá nhân</span>
                         <span>Đăng ký dịch vụ</span>
                         <span>Điều khoản & điều kiện</span>
@@ -117,17 +117,29 @@
                     <!-- End Progress -->
                     <h2 style="text-align: center;">XÁC NHẬN GIẤY TỜ & KHUÔN MẶT</h2>
                     <b class="important">1. CHỤP ẢNH MẶT TRƯỚC VÀ MẶT SAU GIẤY TỜ CỦA QUÝ KHÁCH</b>
-                    <p><i>* Vui lòng sử dụng giấy tờ thật. Hãy đảm bảo ảnh chụp không bị mờ hoặc bóng, thông tin hiển thị rõ ràng, dễ đọc trong điều kiện đầy đủ ánh sáng</i></p>
-                    <div class="item">
+                    <ul>
+                        <li>CMND/CCCD/Hộ chiếu phải còn hiệu lực, là bản gốc không phải bản sao.</li>
+                        <li>Đặt CMND/CCCD/Hộ chiếu trước máy ảnh. Điều chỉnh vị trí giấy tờ cho vừa với khung chụp ảnh.</li>
+                        <li>Đảm bảo ảnh chụp không bị mờ hoặc bóng, thông tin hiển thị rõ ràng, dễ đọc trong điều kiện đầy đủ ánh sáng.</li>
+                        <li>Vui lòng sử dụng máy tính có hỗ trợ máy ảnh.</li>
+                    </ul>
+                    <div class="item" style="justify-content: space-around;">
                         <div class="cccd">
                             <div class="photo">
-                                <button>Chụp</button>
+                                
                             </div>
                             <h3>CMND/CCCD Mặt trước</h3>
+                            <div class="submit-form front_id_card">
+                                <button type="button" class="refresh"></button>
+                                <button type="button" class="next previewsnapshot">Chụp ảnh</button>
+                                <button type="button" class="next previewsnapshot">Tải lên</button>
+                                <button type="button" class="next cancelpreview" onclick="fontIDCardCancelPreview()" value="0" style="display: none;">Chụp lại</button>
+                                <button type="button" class="next takesnapshot" onclick="checkFrontIDCard()" style="display: none;">tiếp theo</button>
+                            </div>
                         </div>
                         <div class="cccd">
                             <div class="photo">
-                                <button>Chụp</button>
+                                
                             </div>
                             <h3>CMND/CCCD Mặt sau</h3>
                         </div>
@@ -137,11 +149,14 @@
                         <button class="next">Tiếp tục</button>
                     </div>
                     <b class="important">2. QUAY VIDEO KHUÔN MẶT</b>
-                    <p><i>* Vui lòng giữ camera ổn định trong quá trình xác minh khuôn mặt.</i></p>
-                    <div class="item">
+                    <ul>
+                        <li>Quý khách hàng cần đặt khuôn mặt trong khung hình camera, giữ đầu và vai thẳng.</li>
+                        <li>Lưu ý: không đeo mắt kiếng, khẩu trang và chụp chụp ảnh trong môi trường thiếu sáng.</li>
+                    </ul>
+                    <div class="item" style="justify-content: space-around;">
                         <div class="cccd">
                             <div class="photo">
-                                <button>Quay</button>
+                                
                             </div>
                             <h3>Xác thực khuôn mặt</h3>
                         </div>
