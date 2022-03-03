@@ -379,7 +379,6 @@ div.item div.cccd {
     align-items: center;
     display: flex;
     flex-direction: column;
-    min-width: 400px;
 }
 
 div.item div.cccd div.photo{
